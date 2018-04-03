@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    
+}
+header{
+    background: url("../images/mountain_road-wallpaper-3840x2160.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body header .nav-container{
+    background-color: black;
+    position: relative;
+    z-index: 2;
+}
+body header .nav-container .mobile-nav{
+    display: none;
+}
+body header .nav-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1.5% 0;
+    position: relative;
+    z-index: 2;
+}
+header .nav-container ul li{
+    list-style: none;
+    margin-right: 5%;
+}
+header .nav-container ul li a{
+    text-transform: capitalize;
+}
+header div img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 10px solid;
+    border-color: #f5f7f6;
+    border-radius: 50%;
+    z-index: 2;
+}
+#header-pic-container{
+    display: flex;
+    position: relative;
+    padding: 10% 41%;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+}
+#header-pic-container h3{
+    position: relative;
+    font-size: 25px;
+    padding-top: 8%;
+    text-transform: capitalize;
+    justify-content: center;
+}
+#header a i{
+    font-size: 50px;
+    position: fixed;
+    z-index: 2;
+    color: black;
+    right: 5%;
+    bottom: 5%;
+}
+@media only screen and (max-width: 840px){
+    body header div img{
+        border: 5px solid;
+        border-color: #f5f7f6;
+    }
+    #menu-ul{
+         display: none;
+         flex-direction: column;
+         background-color: black;
+         position: relative;
+         z-index: 2;
+     }
+    body header .nav-container .mobile-nav{
+        display: flex;
+        float: right;
+        color: white;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-end;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 2%;
+    }
+    body header .nav-container .mobile-nav i:hover #menu-ul{
+        display: flex;
+    }
+}
+a:hover{
+    color: #c2c4c3;
+}
+@media only screen and (min-width: 700px) and (max-width: 1270px){
+    #header-pic-container h3{
+        position: relative;
+        font-size: 25px;
+        padding-top: 8%;
+        text-transform: capitalize;
+        justify-content: center;
+        left: 17%;
+    }
+}
+.overlay{
+    position: absolute;
+    background-color: #a4a6a5;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#about-me-container{
+    display: flex;
+    flex-direction: column;
+    padding: 9% 5%;
+    background-color: white;
+}
+body main section #quote{
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+main section{
+    background-color: #e4e5e6;
+    padding: 2% 0;
+}
+main section p{
+    text-align: center;
+}
+main section h4{
+    text-align: center;
+    font-size: 25px;
+}
+#technologies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#technologies section{
+    display: flex;
+    margin: 4%;
+    flex-direction: column;
+    font-size: 30px;
+}
+#technologies section i{
+    display: flex;
+    justify-content: center;
+}
+#contacts{
+    display: flex;
+    flex-direction: column;
+    margin: 1.25%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+}
+#contacts h4{
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+#contacts #contacts-container{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+#contacts-container a{
+    margin: 2.5%;
+}
